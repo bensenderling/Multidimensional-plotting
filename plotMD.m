@@ -130,9 +130,9 @@ end
 a=max(np);
 a(a==0)=0.01;
 
-plot3(np(:,1),np(:,2),np(:,3),'b','linewidth',1), hold on
+plot3(np(:,1),np(:,2),np(:,3),'k','linewidth',1), hold on
 for u=1:dim
-    plot3(a(1)*[-vectors(u,1);vectors(u,1)],a(2)*[-vectors(u,2);vectors(u,2)],a(3)*[-vectors(u,3);vectors(u,3)],'k','linewidth',2)
+    plot3(a(1)*[-vectors(u,1);vectors(u,1)],a(2)*[-vectors(u,2);vectors(u,2)],a(3)*[-vectors(u,3);vectors(u,3)],'r','linewidth',2)
     text(a(1)*vectors(u,1),a(2)*vectors(u,2),a(3)*vectors(u,3),['a' num2str(u)])
 end
 axis([-a(1) a(1) -a(2) a(2) -a(3) a(3)])
